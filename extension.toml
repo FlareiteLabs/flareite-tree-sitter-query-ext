@@ -1,7 +1,9 @@
-id = "flareite.tree-sitter"
-name = "Tree Sitter Query"
+# Tree-sitter Query: highlighting from a Tree-sitter grammar compiled to
+# WebAssembly. No code. See Flareite's docs/extensions.md#languages.
+id = "flareite.tree-sitter-query"
+name = "Tree-sitter Query"
 version = "0.1.0"
-description = "Tree Sitter Query highlighting."
+description = "Tree-sitter Query highlighting."
 author = "Flareite"
 api_version = "1"
 
@@ -10,9 +12,10 @@ flareite = ">=0.1.0"
 
 [[languages]]
 id = "tree-sitter-query"
-name = "Tree-Sitter Query"
+name = "Tree-sitter Query"
 file_extensions = ["scm"]
 grammar = "grammars/tree-sitter-query.wasm"
+# The grammar exports tree_sitter_query, not tree_sitter_tree_sitter_query.
 grammar_name = "query"
 highlights = "queries/highlights.scm"
 folds = "queries/folds.scm"
