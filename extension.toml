@@ -1,0 +1,20 @@
+id = "flareite.tree-sitter"
+name = "Tree Sitter Query"
+version = "0.1.0"
+description = "Tree Sitter Query highlighting."
+author = "Flareite"
+api_version = "1"
+
+[engines]
+flareite = ">=0.1.0"
+
+[[languages]]
+id = "tree-sitter-query"
+name = "Tree-Sitter Query"
+file_extensions = ["scm"]
+grammar = "grammars/tree-sitter-query.wasm"
+grammar_name = "query"
+highlights = "queries/highlights.scm"
+folds = "queries/folds.scm"
+injections = "queries/injections.scm"
+line_comment = ";"
