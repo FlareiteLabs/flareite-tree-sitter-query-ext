@@ -2,10 +2,10 @@
 # WebAssembly. No code. See Flareite's docs/extensions.md#languages.
 id = "flareite.tree-sitter-query"
 name = "Tree-sitter Query"
-version = "0.2.0"
+version = "1.0.0"
 description = "Tree-sitter Query highlighting."
 author = "Flareite"
-api_version = "1"
+api_version = "2"
 
 [engines]
 flareite = ">=0.1.0"
