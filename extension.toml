@@ -2,7 +2,7 @@
 # WebAssembly. No code. See Flareite's docs/extensions.md#languages.
 id = "flareite.tree-sitter-query"
 name = "Tree-sitter Query"
-version = "0.1.0"
+version = "0.2.0"
 description = "Tree-sitter Query highlighting."
 author = "Flareite"
 api_version = "1"
@@ -21,3 +21,23 @@ highlights = "queries/highlights.scm"
 folds = "queries/folds.scm"
 injections = "queries/injections.scm"
 line_comment = ";"
+# Brackets and quotes typed in pairs, as in VS Code's language configuration.
+brackets = [["(", ")"], ["[", "]"], ["{", "}"]]
+auto_closing_pairs = [
+  [
+    "(",
+    ")",
+  ],
+  [
+    "[",
+    "]",
+  ],
+  [
+    "{",
+    "}",
+  ],
+  { open = '"', close = '"', not_in = [
+    "string",
+    "comment",
+  ] },
+]
