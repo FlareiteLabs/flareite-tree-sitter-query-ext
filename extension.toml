@@ -5,6 +5,7 @@ name = "Tree-sitter Query"
 version = "1.0.0"
 description = "Tree-sitter Query highlighting."
 author = "Flareite"
+icon = "icon.svg"
 api_version = "2"
 
 [engines]
